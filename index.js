@@ -81,7 +81,7 @@ async function collectContributions(targetUser) {
         FOURTH_QUARTILE: "4",
     };
 
-    for (let year = currentYear; year >= startYear; year--) {
+    for (let year = currentYear; year >= currentYear; year--) {
         core.info(`Processing ${year}...`);
 
         const from = `${year}-01-01T00:00:00Z`;
